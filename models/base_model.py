@@ -7,7 +7,6 @@ from datetime import timezone
 from datetime import time
 from datetime import datetime
 from datetime import timedelta
-import models
 
 
 class BaseModel():
