@@ -4,6 +4,7 @@
 import unittest
 from models.base_model import BaseModel
 
+
 class Base(unittest.TestCase):
     """ Testing Model base """
 
@@ -11,10 +12,10 @@ class Base(unittest.TestCase):
         """ using setup method to setup instances """
         self.one = BaseModel()
         self.name = "Test_Model"
-    
+
     def test_for_doc(self):
         self.assertIsNotNone(self.one.__doc__)
-    
+
     def test_Model(self):
         """ Testing the instances just created """
         self.assertIsInstance(self.one, BaseModel)
@@ -23,12 +24,12 @@ class Base(unittest.TestCase):
         self.assertTrue('created_at' in self.one.__dict__)
         self.assertTrue('updated_at' in self.one.__dict__)
         self.assertTrue('class' not in self.one.__dict__)
-    
+
     def test_save(self):
         """ Testing save method """
         self.one.save()
         self.assertNotEqual(self.one.created_at, self.one.updated_at)
-    
+
     def test_id_str(self):
         """ Testing string of id """
         self.assertTrue(type(self.one.id), str)
