@@ -1,0 +1,46 @@
+{
+    "BaseModel.dad93ee1-1a77-45e9-a7c2-cdcf5c030ca3": {
+        "id": "dad93ee1-1a77-45e9-a7c2-cdcf5c030ca3",
+        "created_at": "2022-08-07T21:09:34.754521",
+        "updated_at": "2022-08-07T21:09:34.754530",
+        "__class__": "BaseModel"
+    },
+    "BaseModel.19bf4dc4-b1d3-4607-ad03-c5cda0c6e3ab": {
+        "id": "19bf4dc4-b1d3-4607-ad03-c5cda0c6e3ab",
+        "created_at": "2022-08-07T21:09:34.754777",
+        "updated_at": "2022-08-07T21:09:34.754780",
+        "__class__": "BaseModel"
+    },
+    "BaseModel.db77e2fe-064a-4ed8-a3be-e0dda1114a34": {
+        "id": "db77e2fe-064a-4ed8-a3be-e0dda1114a34",
+        "created_at": "2022-08-07T21:09:34.754808",
+        "updated_at": "2022-08-07T21:09:34.754810",
+        "name": "ALX",
+        "number": 89,
+        "__class__": "BaseModel"
+    },
+    "BaseModel.26db4253-2ca9-47c8-8f02-92a601c96dfa": {
+        "id": "26db4253-2ca9-47c8-8f02-92a601c96dfa",
+        "created_at": "2022-08-07T21:09:34.754998",
+        "updated_at": "2022-08-07T21:09:34.755000",
+        "__class__": "BaseModel"
+    },
+    "BaseModel.e27a7f1d-a1a3-4ae9-828b-06646bf23c24": {
+        "id": "e27a7f1d-a1a3-4ae9-828b-06646bf23c24",
+        "created_at": "2022-08-07T21:09:34.755147",
+        "updated_at": "2022-08-07T21:09:34.755149",
+        "__class__": "BaseModel"
+    },
+    "BaseModel.646ba0a4-71e8-47af-acf8-ebc108ba13ef": {
+        "id": "646ba0a4-71e8-47af-acf8-ebc108ba13ef",
+        "created_at": "2022-08-07T21:09:34.755288",
+        "updated_at": "2022-08-07T21:09:34.755290",
+        "__class__": "BaseModel"
+    },
+    "BaseModel.9f45e1c2-9e31-4828-999d-906a2b345794": {
+        "id": "9f45e1c2-9e31-4828-999d-906a2b345794",
+        "created_at": "2022-08-07T21:09:34.755427",
+        "updated_at": "2022-08-07T21:09:34.755439",
+        "__class__": "BaseModel"
+    }
+}

@@ -1,15 +1,25 @@
 #!/usr/bin/python3
-""" Testing BaseModel """
+"""
+Testing BaseModel
+"""
 
+
+import os
+import json
+import uuid
 import unittest
 from models.base_model import BaseModel
 
 
-class Base(unittest.TestCase):
-    """ Testing Model base """
+class TestBaseModel(unittest.TestCase):
+    """
+    Testing Model base
+    """
 
     def setUp(self):
-        """ using setup method to setup instances """
+        """
+        using setup method to setup instances
+        """
         self.one = BaseModel()
         self.name = "Test_Model"
 
@@ -47,3 +57,29 @@ class Base(unittest.TestCase):
         self.assertTrue(type(j['created_at']), str)
         self.assertTrue(type(j['updated_at']), str)
         self.assertTrue(type(j['__class__']), str)
+
+    def test_basic(self):
+        """
+        Tests basic imputs for the BaseModel class
+        """
+        my_model = BaseModel()
+        my_model.name = "ALX"
+        my_model.number = 89
+        self.assertEqual([my_model.name, my_model.number],
+                         ["ALX", 89])
+
+    def test_datetime(self):
+        """
+        Tests for correct datetime format
+        """
+        pass
+
+    def test_datetime(self):
+        """
+        Tests for correct datetime format
+        """
+        pass
+
+
+if __name__ == '__main__':
+    unittest.main()
