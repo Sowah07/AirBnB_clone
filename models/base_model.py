@@ -8,6 +8,7 @@ from datetime import time
 from datetime import datetime
 from datetime import timedelta
 
+
 class BaseModel():
     """ Class BaseModel which is the superclass """
 
