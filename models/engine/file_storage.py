@@ -6,7 +6,6 @@ deserializes JSON types
 
 import json
 from models.base_model import BaseModel
-from models.user import User
 
 
 class FileStorage:
@@ -31,7 +30,7 @@ class FileStorage:
             object(obj): object to write
 
         """
-        self.__objects[object.__class__.__name__ + '.' + str(object)] = object
+        self.__objects[object.__class__.__name__ + '.' + object.id] = object
 
     def save(self):
         """
