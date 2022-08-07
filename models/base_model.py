@@ -41,7 +41,7 @@ class BaseModel():
 
     def to_dict(self):
         """ Returns a dictionary of all instance attributes """
-        r = dict{}
+        r = {}
         for key, val in self.__dict__.items():
             if key in ['created_at', 'updated_at']:
                 r[key] = val.isoformat()
