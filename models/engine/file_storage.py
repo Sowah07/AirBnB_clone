@@ -18,7 +18,7 @@ class FileStorage():
 
     def new(self, obj):
         """ sets in objects the obj with key <obj c_name>.id """
-        FileStorage.__objects[obj.id] = obj
+        FileStorage.__objects[obj.__class__.__name__ + '.' + str(obj.id)] = obj
 
     def save(self):
         """ serializes __objects to json file path """
@@ -30,16 +30,11 @@ class FileStorage():
 
     def reload(self):
         """ deserializes the json file """
-        dicts = {}
         try:
             with open(FileStorage.__file_path, 'r', encoding='utf-8') as f:
                 dicts = json.load(f)
+                for val in dicts.values():
+                    cls = val["__class__"]
+                    self.new(eval(cls)(**val))
         except Exception:
             pass
-        for dictionary in dicts:
-            obj = None
-            if dictionary['__class__'] == 'BaseModel':
-                obj = BaseModel(**dictionary)
-            else:
-                pass
-            FileStorage.new(obj)
