@@ -5,6 +5,7 @@ and deserializes json file to instances """
 
 import json
 
+
 class FileStorage():
     """ Serialize and deserialize instances """
 
@@ -18,7 +19,7 @@ class FileStorage():
     def new(self, obj):
         """ sets in objects the obj with key <obj c_name>.id """
         FileStorage.__objects[obj.id] = obj
-    
+
     def save(self, obj):
         """ serializes __objects to json file path """
         dicts = {}
