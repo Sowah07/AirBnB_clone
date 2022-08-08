@@ -150,7 +150,7 @@ class HBNBCommand(cmd.Cmd):
                         if type(obj).__name__ == words[0]]
                 print(lsss)
         else:
-            lss = [str(obj) for key, obj in storage.all().items()]
+            lsss = [str(obj) for key, obj in storage.all().items()]
             print(lsss)
 
     def do_count(self, line):
